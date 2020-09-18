@@ -1,0 +1,106 @@
+:root{
+    --vermelho: #e50914; /*assim são definidas variáveis*/
+    --preto: #141414;
+}
+
+/*base*/
+
+*{
+    margin: 0; /*resetamos algumas propriedades em toda a página*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto); /*assim usamos uma variável*/
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+header .conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'arial black', times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover{
+    color: #fff; /*a propriedade hover é um gatilho que se ativa quando o cursor está sobre o elemento*/
+}
+
+/*conteúdo em destaque*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/imgs/dark-fundo.jpg'); /*linear-gradient cria um degradê, é preciso informar duas cores, use rgba*/
+    height: 400px;
+    background-size: cover; /*não redimensiona a imagem, apenas emoldura*/
+    display: flex;
+    flex-direction: column; /*ao mudar essa propriedade, propriedades de alinhamento mudam sua orientação*/
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+
+.filme-principal .descricao{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.filme-principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer; /*faz com que o mouse mude, indicando que o elemento é um botão*/
+    transition: .3s ease all; /*se o elemento tiver a propriedade hover, adiciona um tempo de transição para as alterações*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .conteiner{
+    width: 70%;
+}
+
+/*carossel*/
+
+.item{
+    width: 100%;
+    height: 100%;
+    display: block; /*inibe a ação do display flex*/
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}

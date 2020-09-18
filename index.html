@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>NETFLIX</title>
+
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css"> <!--jquery owlcarousel-->
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="style/responsive.css"> <!--responsive page-->
+
+</head>
+<body>
+    <header> <!--é como uma div, mas tem nome mais intuitivo-->
+        <div class="conteiner"> <!--isso é um wrapper-->
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a> <!--alt + shift + seta para baixo cria uma cópia da linha atual-->
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main> <!--é como uma div, mas tem nome mais intuitivo-->
+        <div class="filme-principal">
+            <div class="conteiner"> <!--isso é um wrapper, ele é filho direto da classe "filme-principal" e recebe suas alterações-->
+                <h3 class="titulo">Dark</h3>
+                <p class="descricao">Quatro famílias iniciam uma desesperada busca por respostas quando uma criança desaparece e um complexo mistério envolvendo três gerações começa a se revelar. Assista agora a nova temporada de Dark que está imperdível.</p>
+            </div>
+            <div class="botoes"> <!--essa classe é filha direta da classe "filme-principal" e recebe suas alterações-->
+                <button role="button" class="botao"> <!--button já está fora do alcance das alterações na classe "filme-principal"-->
+                    <i class="fas fa-play"></i> <!--icone remoto disponível no site fontawesome-->
+                    ASSISTIR AGORA
+                </button>
+                <button role="button" class="botao"> <!--button já está fora do alcance das alterações na classe "filme-principal"-->
+                    <i class="fas fa-info-circle"></i> <!--icone remoto disponível no site fontawesome-->
+                    MAIS INFORMAÇÕES
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="imgs/mini1.jpg" alt="1" srcset=""></div>
+            <div class="item"><img src="imgs/mini2.jpg" alt="2" srcset=""></div>
+            <div class="item"><img src="imgs/mini3.jpg" alt="3" srcset=""></div>
+            <div class="item"><img src="imgs/mini4.jpg" alt="4" srcset=""></div>
+            <div class="item"><img src="imgs/mini5.jpg" alt="5" srcset=""></div>
+            <div class="item"><img src="imgs/mini6.jpg" alt="6" srcset=""></div>
+            <div class="item"><img src="imgs/mini7.jpg" alt="7" srcset=""></div>
+            <div class="item"><img src="imgs/mini8.jpg" alt="8" srcset=""></div>
+            <div class="item"><img src="imgs/mini9.jpg" alt="9" srcset=""></div>
+            <div class="item"><img src="imgs/mini10.jpg" alt="10" srcset=""></div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/fc9eda5723.js" crossorigin="anonymous"></script> <!--fontawesome-->
+
+    <script src="js/owl/jquery.min.js"></script> <!--jquery owlcarousel-->
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+</body>
+</html>
